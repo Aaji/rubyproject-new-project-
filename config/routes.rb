@@ -1,5 +1,11 @@
 Project::Application.routes.draw do 
 
+  devise_for :users
+
+  #devise_for :users
+
+  #devise_for :installs
+
 root :to => 'pages#home'
 
 get 'agentportal' => 'pages#agentportal'

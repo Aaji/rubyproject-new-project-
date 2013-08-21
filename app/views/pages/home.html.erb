@@ -1,11 +1,13 @@
-<div class= "hero-unit">
-<h1>
-	<p>Welcome to<br/ > Tailored.ca!</p>
-</h1>
-<p>Tailored brings you the latest in mens custom suits.</p>
-
-
-<p>
-	<a href='#'>Sign Up Now!</a>
-</p>
-</div>
+<% if user_signed_in? %>
+	<p> You are logged in </p>
+<% else %> 
+	<div class= "hero-unit">
+		<h1>
+			<p>Welcome to<br/ > Tailored.ca!</p>
+		</h1>
+			<p>Tailored brings you the latest in mens custom suits.</p>
+		<p>
+			<%= link_to "Sign Up Now", '#' %>
+		</p>
+	</div> 
+<% end %>
