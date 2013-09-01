@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130831183007) do
+ActiveRecord::Schema.define(:version => 20130831224612) do
 
   create_table "images", :force => true do |t|
     t.string   "name"
@@ -31,7 +31,10 @@ ActiveRecord::Schema.define(:version => 20130831183007) do
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "user_id"
   end
+
+  add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
 
   create_table "spud_admin_permissions", :force => true do |t|
     t.integer  "user_id"
