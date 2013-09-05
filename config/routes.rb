@@ -13,11 +13,14 @@ root :to => 'pages#home'
 
 get 'agentportal' => 'pages#agentportal'
 
-get 'lookbook' => 'pages#lookbook'
 
 get 'blog' => 'pages#blog'
 
 get 'aboutus' =>'pages#aboutus'
+
+get 'lookbook' => 'pages#lookbook' 
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
