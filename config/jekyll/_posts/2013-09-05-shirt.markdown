@@ -1,0 +1,6 @@
+---
+layout: post
+published: true
+title: shirt
+---
+cool shits on sale now

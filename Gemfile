@@ -6,6 +6,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'carrierwave'
 gem 'spud_photos'
+gem 'bloggy'
 
 
 # Bundle edge Rails instead:
