@@ -1,0 +1,8 @@
+---
+layout: post
+published: false
+title: Shirts
+---
+
+
+Shirts are avaialable today at the store. Stop by today for a 50% discount on all shirts.

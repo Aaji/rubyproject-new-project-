@@ -14,9 +14,7 @@ root :to => 'pages#home'
 get 'agentportal' => 'pages#agentportal'
 
 
-match 'blog' => 'blog#index'
-
-match 'blog/:title' => 'blog#post'
+get 'blog' => 'pages#blog'
 
 get 'aboutus' =>'pages#aboutus'
 
