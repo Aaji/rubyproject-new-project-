@@ -16,9 +16,14 @@
 			<%= content_tag(:div, msg, class: "alert alert-hyphen#{name}") %>
 		<% end %>
 		<%= yield %>
-	<%= render 'layouts/footer' %>
 	 </div>
 </body>
 
+<div id="wrap">
+  <div id="main" class="container clear-top">
+  	<%= render 'layouts/footer' %>
+  </div>
+</div>
+<footer class="footer"></footer>
 
 </html>
