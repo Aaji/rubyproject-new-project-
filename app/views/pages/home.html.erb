@@ -1,17 +1,13 @@
 <% if user_signed_in? %>
-	<p> You are logged in </p>
-<% else %> 
 
-<div class="container">
+<div class="container span8">
 		<h1>
-			<p>Welcome to<br/ > Tailored.ca!</p>
+			<p>Welcome to Tailored.ca!</p>
 		</h1>
-			<p>Tailored brings you the latest in mens custom suits.</p>
-		<p>
-			<%= link_to "Sign Up Now", '#' %>
-		</p>
-
+			<p>Tailored brings you the latest in mens custom suits and stylish apparel.</p>
 </div>
+
+
 
 <div class="container">
 	<!--  Carousel - consult the Twitter Bootstrap docs at 
@@ -22,7 +18,7 @@
       <%= image_tag "casual.jpeg"  %>
       <div class="carousel-caption">
         <p>Item 1</p>
-      </div>
+      </div> 
     </div>
     <div class="item">
       <%= image_tag "suit_shades.png"  %>
@@ -49,16 +45,75 @@
     <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 </div><!-- /.carousel -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
 
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script>
-  $(document).ready(function(){
-    $('.carousel').carousel({
-      interval: 5000
-    });
-  });
-</script>
+	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $('.carousel').carousel({
+	      interval: 5000
+	    });
+	  });
+	</script>
+	
+<% else %> 
+
+<div class="container span8">
+		<h1>
+			<p>Welcome to Tailored.ca!</p>
+		</h1>
+			<p>Tailored brings you the latest in mens custom suits and stylish apparel.</p>
+</div>
+
+
+
+<div class="container">
+	<!--  Carousel - consult the Twitter Bootstrap docs at 
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <%= image_tag "casual.jpeg"  %>
+      <div class="carousel-caption">
+        <p>Item 1</p>
+      </div> 
+    </div>
+    <div class="item">
+      <%= image_tag "suit_shades.png"  %>
+      <div class="carousel-caption">
+        <p>Item 2</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "casual2.jpeg"  %>
+      <div class="carousel-caption">
+        <p>Item 3</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "casual3.jpeg"  %>
+      <div class="carousel-caption">
+        <p>Item 4</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+
+	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $('.carousel').carousel({
+	      interval: 5000
+	    });
+	  });
+	</script>
 
 <% end %>
